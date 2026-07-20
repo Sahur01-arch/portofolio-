@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Sahur01-arch/portofolio-/issues"
   },
-  "homepage": "https://github.com/Sahur01-arch/portofolio-#readme"
+  "homepage": "https://github.com/Sahur01-arch/portofolio-#readme",
+  "dependencies": {
+    "tailwindcss": "^4.3.3"
+  }
 }
