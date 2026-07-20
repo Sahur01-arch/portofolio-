@@ -1,0 +1,110 @@
+:root {
+  /* Brand & Core Colors */
+  --color-primary: #5A8266;
+  --color-secondary: #D8E2DC;
+  --color-accent: #D96B43;
+  --color-neutral-light: #F8F9FA;
+  --color-neutral-dark: #1C2A20;
+  /* Surfaces and background*/
+  --color-bg: #141E17;
+  --color-surface1: #1C2A40;
+  --color-surface2: #283B2E;
+  --color-surface3: 374E3E;
+  /* Text & Typhography */
+  --color-text: #F8F9FA;
+  --color-text-muted: #A3B899;
+  --color-text-subtle: #798C71;
+  /* Borders & utilities */
+  --color-border: #2C4032;
+  --color-border-subtle: #213327;
+  /* Feedback & States */ 
+  --color-success: #4E9F6E;
+  --color-warning: #E0A96D;
+  --color-error: #D9534F;
+  --color-info: #5C8A99;
+}
+
+@font-face {
+  font-family: 'Adwaita Mono';
+  src: url('../fonts/AdwaitaMonoNerdFont-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Adwaita Mono';
+  src: url('../fonts/AdwaitaMonoNerdFont-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Adwaita Mono';
+  src: url('../fonts/AdwaitaMonoNerdFont-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Adwaita Mono';
+  src: url('../fonts/AdwaitaMonoNerdFont-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+body {
+  font-family: 'Adwaita Mono', monospace;
+  background: var(--color-bg);
+  color: var(--color-text);
+  margin: 0;
+  padding: 20px;
+}
+
+.hero-card {
+  background: var(--color-primary);
+  border-radius: 16px;
+  padding: 40px 20px;
+  text-align: center;
+  box-shadow:; 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+  margin-bottom: 30px;
+}
+.hero-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.photo {
+  height: auto;
+  width: 65%;
+  border-radius: 360px;
+}
+
+.btn-primary {
+  display: inline-block;
+  background-color: var(--color-accent);
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  box-shadow: 0 4px 12px rgba(217, 107, 67, 0.3);
+  transition: transform 0.2s, background-color 0.2s;
+}
+.btn-primary:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.1);
+}
+
+.section-title {
+  color: var(--color-text);
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-top: 20px
+}
+
+.projects {
+  color: var(--color-text);
+}
