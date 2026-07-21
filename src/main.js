@@ -1,4 +1,5 @@
 import "./style.css";
+import "./frontend.js";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { gsap } from "gsap";

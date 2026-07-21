@@ -52,13 +52,52 @@
   font-style: italic;
 }
 
+body.dark-theme {
+  /* Brand & Core Colors */
+  --color-primary: #A78BFA;        /* Ungu terang pastel (kontras tinggi di background gelap) */
+  --color-secondary: #2E1065;      /* Ungu pekat/gelap */
+  --color-accent: #F43F5E;         /* Aksen Rose/Pink neon */
+  --color-neutral-light: #F5F3FF;  /* Warna terang netral */
+  --color-neutral-dark: #0F0A1C;   /* Warna gelap netral */
+
+  /* Surfaces and background */
+  --color-bg: #090514;             /* Background utama (Hitam pekat dengan nuansa ungu) */
+  --color-surface1: #130D24;       /* Surface paling dasar (Ungu-hitam sangat gelap) */
+  --color-surface2: #1E1538;       /* Surface tingkat 2 (Ungu gelap) */
+  --color-surface3: #2A1E4E;       /* Surface tingkat 3 (Ungu medium gelap) */
+
+  /* Text & Typography */
+  --color-text: #F5F3FF;           /* Teks utama (Putih keunguan terang) */
+  --color-text-muted: #A799C7;     /* Teks sekunder (Ungu soft redup) */
+  --color-text-subtle: #746497;    /* Teks pudar (Ungu gelap redup) */
+
+  /* Borders & utilities */
+  --color-border: #3B2A68;         /* Garis batas ungu gelap */
+  --color-border-subtle: #231842;  /* Garis batas sangat samar */
+
+  /* Feedback & States */
+  --color-success: #34D399;        /* Hijau neon lembut */
+  --color-warning: #FBBF24;        /* Kuning/Oranye terang */
+  --color-error: #F87171;          /* Merah terang */
+  --color-info: #60A5FA;           /* Biru terang */
+}
+
+
 body {
-  body-sizing: border-box;
+  box-sizing: border-box;
   font-family: 'Adwaita Mono', monospace;
   background: var(--color-bg);
   color: var(--color-text);
   margin: 0;
   padding: 20px;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.hero-card,
+.about-box,
+.projects,
+.btn-primary {
+  transition: background-color 0.4s ease, color 0.4s ease, border-color, 0.4s ease;
 }
 
 .hero-card {

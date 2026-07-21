@@ -6,3 +6,17 @@ document.querySelectorAll(".about-box").forEach(box => {
     gsap.to(box, {y: 0, scale: 1, duration: 0.3, ease: "power2.out"})
   });
 }); 
+
+const toggleBtn = document.querySelector("#theme-toggle");
+const photo = document.querySelector(".photo");
+
+toggleBtn.addEventListener("click", () => {
+  document.body.classList.toggle("dark-theme");
+  
+  const isDark = document.body.classList.contains("dark-theme")
+
+  photo.src = isDark
+  ? "/src/assets-img/profile-dark.jpg"
+  : "/src/assets-img/profile-light.jpg";
+  toggleBtn.textContent = isDark ? "☀️Change Theme":"🌙 Change Theme"
+})
