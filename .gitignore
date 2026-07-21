@@ -1,17 +1,24 @@
-# 1. Dependency / Pustaka Node.js (WAJIB diabaikan, ukurannya sangat besar)
-node_modules/
-
-# 2. File Log & Cache
+# Logs
+logs
 *.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
 .DS_Store
-.vscode/
-.idea/
-
-# 3. File font varian Mono & Propo yang tidak dipakai
-# (Agar repositori tidak berat membawa belasan file font .ttf)
-assets/css/fonts/*Mono*.ttf
-assets/css/fonts/*Propo*.ttf
-
-# 4. (Opsional) File environment/rahasia jika nanti menggunakan backend
-.env
-
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
