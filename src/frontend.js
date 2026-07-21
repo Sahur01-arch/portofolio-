@@ -1,3 +1,6 @@
+import darkProfile from "./assets-img/profile-dark.jpg";
+import lightProfile from "./assets-img/profile-light.jpg";
+
 document.querySelectorAll(".about-box").forEach(box => {
   box.addEventListener("mouseenter", () => {
     gsap.to(box, {y: -6, scale: 1.02, duration: 0.3, ease: "power2.out"});
@@ -15,8 +18,6 @@ toggleBtn.addEventListener("click", () => {
   
   const isDark = document.body.classList.contains("dark-theme")
 
-  photo.src = isDark
-  ? "./assets-img/profile-dark.jpg"
-  : "./assets-img/profile-light.jpg";
+  photo.src = isDark ? darkProfile : lightProfile;
   toggleBtn.textContent = isDark ? "☀️Change Theme":"🌙 Change Theme"
 })
