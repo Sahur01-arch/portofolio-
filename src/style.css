@@ -78,7 +78,7 @@ body {
 
 .photo {
   height: auto;
-  width: 65%;
+  width: 50%;
   border-radius: 360px;
 }
 
@@ -101,6 +101,7 @@ body {
 
 .section-title {
   color: var(--color-text);
+  text-align: center;
   font-size: 1.4rem;
   font-weight: 700;
   margin-top: 20px
@@ -108,4 +109,24 @@ body {
 
 .projects {
   color: var(--color-text);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+.about-box {
+  background: var(--color-surface2);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: left;
+}
+
+.about-box h3 {
+  color: var(--color-accent);
+  margin-bottom: 8px;
+  font-size: 1.1rem;
 }
