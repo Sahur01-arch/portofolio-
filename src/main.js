@@ -4,6 +4,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { gsap } from "gsap";
 
+
 // Inisialisasi AOS untuk animasi scroll
 AOS.init({
   duration: 800,

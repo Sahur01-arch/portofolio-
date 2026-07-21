@@ -178,3 +178,16 @@ body {
   pointer-events: none;
   z-index: 9999;
 }
+
+.social-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.social-container img {
+  width: 24px;
+  height: auto;
+  object-fit: contain;
+}
