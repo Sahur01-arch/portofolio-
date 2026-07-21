@@ -16,7 +16,7 @@ toggleBtn.addEventListener("click", () => {
   const isDark = document.body.classList.contains("dark-theme")
 
   photo.src = isDark
-  ? "/src/assets-img/profile-dark.jpg"
-  : "/src/assets-img/profile-light.jpg";
+  ? "./assets-img/profile-dark.jpg"
+  : "./assets-img/profile-light.jpg";
   toggleBtn.textContent = isDark ? "☀️Change Theme":"🌙 Change Theme"
 })
