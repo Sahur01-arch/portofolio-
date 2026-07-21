@@ -169,3 +169,12 @@ body {
   margin-bottom: 8px;
   font-size: 1.1rem;
 }
+
+.theme-overlay {
+  position: fixed;
+  inset: 0;
+  background: var(--color-primary);
+  opacity: 0;
+  pointer-events: none;
+  z-index: 9999;
+}
