@@ -20,5 +20,18 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "aos": "^2.3.4",
+    "gsap": "^3.15.0",
+    "tailwindcss": "^4.3.3"
+  },
+  "devDependencies": {
+    "vite": "^8.1.5"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   }
 }
