@@ -9,7 +9,7 @@
   --color-bg: #141E17;
   --color-surface1: #1C2A40;
   --color-surface2: #283B2E;
-  --color-surface3: 374E3E;
+  --color-surface3: #374E3E;
   /* Text & Typhography */
   --color-text: #F8F9FA;
   --color-text-muted: #A3B899;
@@ -82,6 +82,9 @@ body.dark-theme {
   --color-info: #60A5FA;           /* Biru terang */
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   box-sizing: border-box;
@@ -97,7 +100,7 @@ body {
 .about-box,
 .projects,
 .btn-primary {
-  transition: background-color 0.4s ease, color 0.4s ease, border-color, 0.4s ease;
+  transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease;
 }
 
 .hero-card {
@@ -184,10 +187,67 @@ body {
   align-items: center;
   justify-content: center;
   gap: 16px;
+  margin-top: 16px;
 }
 
 .social-container img {
   width: 24px;
   height: auto;
   object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+.skills-box {
+  background: var(--color-surface2);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: left;
+}
+
+.skills-box h3 {
+  color: var(--color-accent);
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+}
+.topnav {
+  display: flex;
+  align-items: center;
+  background-color: var(--color-surface3);
+  border-radius: 12px;
+  margin-bottom: 30px;
+  padding: 4px;
+}
+
+.topnav button {
+  background-color: var(--color-accent);
+  text-align: center;
+  padding: 10px 16px;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  background: transparent;
+}
+
+.topnav button:hover {
+  background-color: var(--color-secondary);
+  color: var(--color-accent);
+}
+
+.tag {
+  background-color: var(--color-accent);
+  color: var(--color-text);
+  padding: 5px 10px;
+  border-radius: 2px;
+  font-size: 0.85rem;
+  max-width: 100%;
+  word-break: break-word;
+  box-sizing: border-box;
 }
