@@ -14,3 +14,9 @@ assets/css/fonts/*Propo*.ttf
 
 # 4. (Opsional) File environment/rahasia jika nanti menggunakan backend
 .env
+<<<<<<< HEAD
+=======
+android/
+capacitor.config.json
+
+>>>>>>> a395dced96ee1da4e7e437c2fb75e88ea94f2e04
