@@ -19,3 +19,9 @@ heroTimeline
   .from(".hero-subtitle", { opacity: 0, y: 20, duration: 0.6 }, "-=0.4")
   .from(".hero-card p", { opacity: 0, y: 20, duration: 0.5 }, "-=0.3")
   .from(".btn-primary", { opacity: 0, scale: 0.8, duration: 0.5 }, "-=0.3");
+
+const button = document.getElementById("anjay");
+
+button.addEventListener("click", function() {
+  window.location.href = "/src/saryu_vortex.html";
+});
